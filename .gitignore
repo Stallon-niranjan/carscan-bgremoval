@@ -1,7 +1,7 @@
 /__pycache__/
 *.pyc
-venv/
 /flagged/
+*venv/
 gradio_queue*
 .vscode
 .history
