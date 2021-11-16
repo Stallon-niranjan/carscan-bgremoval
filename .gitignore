@@ -1,0 +1,7 @@
+/__pycache__/
+*.pyc
+/venv/
+/flagged/
+gradio_queue*
+.vscode
+.history

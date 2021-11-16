@@ -1,0 +1,9 @@
+numpy
+gradio
+opencv-python
+torch
+torchvision
+pillow
+mediapipe
+rembg
+matplotlib
