@@ -6,9 +6,8 @@ from __future__ import print_function
 import gradio as gr
 from mlfunc import *
 
-title = "CarScan: BG Removal & Replacement"
-description = '''Gradio demo CarScan Background Removal & Replacement.
-To use it, simply upload your image, or click one of the examples to load them. Read more at the links below.'''
+title = 'CarScan : BackGround Removal'
+description = 'Gradio demo CarScan Background Removal. To use it, simply upload your image, or click one of the examples'
 
 examples = [['images/car1.jpeg'],['images/car2.jpeg'],['images/car3.jpeg'],['images/car4.jpeg'],['images/car5.jpg']]
 
