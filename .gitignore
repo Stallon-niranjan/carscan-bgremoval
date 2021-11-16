@@ -1,6 +1,6 @@
 /__pycache__/
 *.pyc
-/venv/
+venv/
 /flagged/
 gradio_queue*
 .vscode
