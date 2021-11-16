@@ -1,3 +1,7 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
 from rembg.bg import remove
 import mediapipe as mp
 import torchvision.transforms as T
@@ -53,7 +57,7 @@ def mpSegment(img):
         return np.where(mask, image, background)
 
 
-def decode_segmap(image, source, nc=21):
+def segmap(image, source, nc=21):
 
     label_colors = np.array([(0, 0, 0),  # 0=background
                              # 1=aeroplane, 2=bicycle, 3=bird, 4=boat, 5=bottle
@@ -116,7 +120,7 @@ def segment(net, path, show_orig=True, dev='cpu'):
     out = net.to(dev)(inp)['out']
     om = torch.argmax(out.squeeze(), dim=0).detach().cpu().numpy()
 
-    rgb = decode_segmap(om, path)
+    rgb = segmap(om, path)
     return rgb
 
 

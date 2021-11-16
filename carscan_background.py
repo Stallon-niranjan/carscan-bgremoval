@@ -1,4 +1,8 @@
 # pylint: disable=missing-module-docstring
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
 import gradio as gr
 from mlfunc import *
 
@@ -11,6 +15,7 @@ examples = [['images/car1.jpeg'],['images/car2.jpeg'],['images/car3.jpeg'],['ima
 # input_image = gr.inputs.Image(type="pil"),
 
 def replacer(image, operation):
+
     if operation == "MediaPipe":
         return mpSegment(image)
     elif operation == "DeepLabV3":
